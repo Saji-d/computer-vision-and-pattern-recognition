@@ -4,7 +4,7 @@
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-102230)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-FF6F00)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-00897B?logo=jupyter&logoColor=white)
 
 A curated collection of **Computer Vision and Pattern Recognition** projects developed through
 academic coursework and hands-on experimentation.
@@ -118,4 +118,5 @@ computer-vision-and-pattern-recognition/
 
 **Sajidur Rahman Sajid**  
 Computer Science & Engineering (CSE)  
+
 Aspiring **AI / Machine Learning Engineer**
