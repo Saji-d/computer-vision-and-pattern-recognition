@@ -118,5 +118,4 @@ computer-vision-and-pattern-recognition/
 
 **Sajidur Rahman Sajid**  
 Computer Science & Engineering (CSE)  
-
 Aspiring **AI / Machine Learning Engineer**
