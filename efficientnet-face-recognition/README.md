@@ -13,9 +13,9 @@ A classical computer vision project that implements face recognition using OpenC
 
 ## 📌 Overview
 
-This project implements a **deep learning–based face recognition system** using **EfficientNet** as a feature extractor within a transfer learning framework.
+This project implements a **deep learning-based face recognition system** using **EfficientNet** as a feature extractor within a transfer learning framework.
 
-The system learns discriminative facial embeddings and performs identity recognition from image input, emphasizing **deep feature extraction, model fine-tuning, and inference workflow** rather than production deployment.
+The system learns discriminative facial embeddings and performs identity recognition from image input, emphasizing **deep feature extraction, model fine-tuning and inference workflow** rather than production deployment.
 
 ---
 
@@ -31,7 +31,7 @@ The system learns discriminative facial embeddings and performs identity recogni
 ## 🧠 Model Used: EfficientNet
 
 **EfficientNet** is a family of CNN models that:
-- Scales network depth, width, and resolution efficiently  
+- Scales network depth, width and resolution efficiently  
 - Achieves high accuracy with fewer parameters  
 - Performs well for transfer learning in vision tasks  
 

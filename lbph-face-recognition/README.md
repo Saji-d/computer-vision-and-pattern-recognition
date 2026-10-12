@@ -13,7 +13,7 @@ A classical computer vision project that implements face recognition using OpenC
 
 This project implements a **classical face recognition system** using the **Local Binary Patterns Histogram (LBPH)** algorithm provided by OpenCV.
 
-The focus is on **feature-based face representation**, identity prediction, and robustness to lighting variations, highlighting traditional computer vision techniques as an alternative to deep learning–based approaches.
+The focus is on **feature-based face representation**, identity prediction and robustness to lighting variations, highlighting traditional computer vision techniques as an alternative to deep learning-based approaches.
 
 ---
 

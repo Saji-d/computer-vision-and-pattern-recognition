@@ -7,7 +7,7 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
 ![MLP](https://img.shields.io/badge/MLP-6A1B9A)
 
-A pattern recognition project that uses an MLP-based classifier to learn and distinguish patterns from numerical data, emphasizing normalization, training dynamics, and decision boundaries.
+A pattern recognition project that uses an MLP-based classifier to learn and distinguish patterns from numerical data, emphasizing normalization, training dynamics and decision boundaries.
 
 ---
 
@@ -15,7 +15,7 @@ A pattern recognition project that uses an MLP-based classifier to learn and dis
 
 This project explores **pattern recognition concepts** through an **MLP-based classifier**, focusing on how neural networks learn abstract patterns from numerical data.
 
-Key aspects include **data normalization, decision boundary visualization, and training behavior analysis**, providing insight into classical neural network–based pattern recognition.
+Key aspects include **data normalization, decision boundary visualization and training behavior analysis**, providing insight into classical neural network-based pattern recognition.
 
 ---
 
@@ -73,7 +73,7 @@ Training setup typically includes:
 
 ## 🧪 Key Learnings
 
-- Understanding neural network–based pattern recognition  
+- Understanding neural network-based pattern recognition  
 - Effect of hidden layers on learning capacity  
 - Importance of preprocessing in classification tasks  
 

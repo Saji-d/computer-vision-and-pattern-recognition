@@ -5,7 +5,7 @@
 ![Machine Learning](https://img.shields.io/badge/Machine%20Learning-4CAF50)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
 
-A deep learning–based project that applies a **neural network** to recognize handwritten digits from image data, demonstrating core concepts of image classification using dense layers.
+A deep learning-based project that applies a **neural network** to recognize handwritten digits from image data, demonstrating core concepts of image classification using dense layers.
 
 ---
 
@@ -13,7 +13,7 @@ A deep learning–based project that applies a **neural network** to recognize h
 
 This project focuses on designing and training a **neural network** for handwritten digit recognition, a classic task in machine learning and pattern recognition.
 
-The model operates on **flattened grayscale images** and classifies digits into **10 classes (0–9)**. The emphasis is on **neural network training, evaluation, and performance analysis**, rather than convolution-based feature extraction.
+The model operates on **flattened grayscale images** and classifies digits into **10 classes (0 to 9)**. The emphasis is on **neural network training, evaluation and performance analysis**, rather than convolution-based feature extraction.
 
 ---
 
