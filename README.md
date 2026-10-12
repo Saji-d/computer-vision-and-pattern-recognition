@@ -1,121 +1,148 @@
-# 🖼️ Computer Vision and Pattern Recognition
+<div align="center">
+  <img src="assets/banner.svg" alt="computer-vision-and-pattern-recognition banner" width="100%">
+  <p><code>Five coursework notebooks covering KNN, MLP, MNIST, LBPH and EfficientNet transfer learning</code></p>
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-102230)
-![Deep Learning](https://img.shields.io/badge/Deep%20Learning-FF6F00)
-![Jupyter](https://img.shields.io/badge/Jupyter-00897B?logo=jupyter&logoColor=white)
+  ![Status](https://img.shields.io/badge/status-academic-22d3ee?style=flat-square&labelColor=0B0E1A)
+  ![Licence](https://img.shields.io/badge/licence-MIT-8b7cf6?style=flat-square&labelColor=0B0E1A)
+  ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=c084fc&labelColor=0B0E1A)
+  ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=c084fc&labelColor=0B0E1A)
+  ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=c084fc&labelColor=0B0E1A)
+  ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=c084fc&labelColor=0B0E1A)
+  ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=c084fc&labelColor=0B0E1A)
 
-A curated collection of **Computer Vision and Pattern Recognition** projects developed through
-academic coursework and hands-on experimentation.
+  <a href="#-overview">Overview</a> · <a href="#-projects">Projects</a> · <a href="#-preview">Preview</a> · <a href="#-tech-stack">Tech Stack</a> · <a href="#-getting-started">Getting Started</a> · <a href="#-project-structure">Structure</a> · <a href="#-author">Author</a>
+</div>
 
-This repository demonstrates the application of **classical machine learning**, **traditional
-computer vision techniques**, and **neural network–based models** for image recognition,
-classification, and pattern analysis tasks.
+<img src="assets/divider.svg" alt="" width="100%">
 
----
+## ◈ Overview
 
-## 🔍 Projects Overview
+An index of computer vision and pattern recognition notebooks written for coursework. They run from distance-based learning and hand-built neural networks to a classical face recognizer and a transfer learning model.
 
-### 🔹 Real-Time Face Recognition using EfficientNet
-**Folder:** `efficientnet-face-recognition`
+Each sub-project is one notebook with its own README. They are learning projects on small datasets, not production systems.
 
-- Developed a deep learning–based face recognition system using **EfficientNet**.
-- Utilized **transfer learning** for robust facial feature extraction.
-- Supports real-time face recognition using webcam input.
+<img src="assets/divider.svg" alt="" width="100%">
 
-**Core Concepts:** EfficientNet, transfer learning, deep face recognition
+## ◈ Projects
 
----
+<table>
+<tr>
+<td width="50%" valign="top">
 
-### 🔹 Multiclass Image Classification using KNN
-**Folder:** `knn-multiclass-image-classification`
+**KNN Image Classification**
 
-- Implemented a **K-Nearest Neighbors (KNN)** classifier for multiclass image classification.
-- Used L1 and L2 distance metrics with majority voting.
-- Evaluated performance using cross-validation.
+Manual K-Nearest Neighbors with L1 and L2 distance and cross-validation on grayscale, flattened images.
 
-**Core Concepts:** KNN, distance-based learning, multiclass classification
+Recorded result: L1 best at k=1 with 33.33% accuracy, L2 best at k=9 with 41.00%.
 
----
+[Folder](knn-multiclass-image-classification) · [Notebook](knn-multiclass-image-classification/knn_multiclass_image_classification.ipynb)
 
-### 🔹 Face Recognition using LBPH (OpenCV)
-**Folder:** `lbph-face-recognition`
+</td>
+<td width="50%" valign="top">
 
-- Built a face recognition system using the **Local Binary Patterns Histogram (LBPH)** algorithm.
-- Used OpenCV for face detection and identity recognition.
-- Demonstrates classical, texture-based face recognition methods.
+**MLP Pattern Recognition**
 
-**Core Concepts:** LBPH, classical computer vision, face recognition
+A multilayer perceptron trained with backpropagation on numerical data, with decision boundary plots.
 
----
+Recorded result: 0.99 test accuracy on 200 samples across 5 classes.
 
-### 🔹 Pattern Recognition using Multilayer Perceptron (MLP)
-**Folder:** `pattern-recognition-mlp`
+[Folder](mlp-pattern-recognition) · [Notebook](mlp-pattern-recognition/mlp_pattern_recognition.ipynb)
 
-- Implemented a **Multilayer Perceptron (MLP)** from scratch.
-- Applied backpropagation and gradient descent for training.
-- Visualized decision boundaries and evaluated classification performance.
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-**Core Concepts:** MLP, pattern recognition, neural networks
+**MNIST Digit Recognition**
 
----
+A fully connected Keras network (no convolutions) on flattened 28x28 digits.
 
-### 🔹 Handwritten Digit Recognition using a Neural Network
-**Folder:** `neural-network-mnist-digit-recognition`
+Recorded result: 97.66% test accuracy after 5 epochs.
 
-- Implemented a **fully connected neural network** for handwritten digit classification.
-- Operates on flattened grayscale digit images.
-- Evaluated classification performance on unseen test data.
+[Folder](neural-network-mnist-digit-recognition) · [Notebook](neural-network-mnist-digit-recognition/neural_network_mnist_digit_recognition.ipynb)
 
-**Core Concepts:** Neural networks, digit recognition, classification
+</td>
+<td width="50%" valign="top">
 
----
+**LBPH Face Recognition**
 
-## 📁 Repository Structure
+Classical OpenCV pipeline: Haar cascade face detection and an LBPH recognizer trained per identity.
+
+Not deep learning. Datasets are not included.
+
+[Folder](lbph-face-recognition) · [Notebook](lbph-face-recognition/lbph_face_recognition.ipynb)
+
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+
+**EfficientNet Face Recognition**
+
+Transfer learning with a frozen EfficientNetB0 base, augmentation and a small dense head, plus a webcam loop that marks low-confidence faces as Unknown. It was trained on a very small private set (66 face crops), so its validation score says little about real-world accuracy. Datasets are not included.
+
+[Folder](efficientnet-face-recognition) · [Notebook](efficientnet-face-recognition/efficientnet_face_recognition.ipynb)
+
+</td>
+</tr>
+</table>
+
+<img src="assets/divider.svg" alt="" width="100%">
+
+## ◈ Preview
+
+<div align="center">
+  <img src="docs/preview.webp" alt="Preview cover for the face recognition projects" width="80%">
+</div>
+
+<img src="assets/divider.svg" alt="" width="100%">
+
+## ◈ Tech Stack
+
+| Layer | Technologies | Purpose |
+|---|---|---|
+| Language | Python | Notebook code |
+| Vision | OpenCV, Pillow | Face detection, LBPH and image loading |
+| Deep learning | TensorFlow, Keras | MNIST network and EfficientNetB0 transfer learning |
+| Classical ML | NumPy, scikit-learn | KNN, MLP and evaluation reports |
+| Environment | Jupyter, Google Colab | Running the notebooks |
+
+<img src="assets/divider.svg" alt="" width="100%">
+
+## ◈ Getting Started
+
+```bash
+git clone https://github.com/Saji-d/computer-vision-and-pattern-recognition.git
+cd computer-vision-and-pattern-recognition
+pip install jupyter numpy matplotlib opencv-contrib-python scikit-learn tensorflow pandas pillow tqdm
+jupyter notebook
+```
+
+The face recognition notebooks read a local folder of images arranged as one sub-folder per person. The paths in them point to the author's machine, so edit `dataset_path` before running. Face datasets are private and are not included. The webcam cells need a connected camera and LBPH needs `opencv-contrib-python` for `cv2.face`.
+
+<img src="assets/divider.svg" alt="" width="100%">
+
+## ◈ Project Structure
+
 ```text
 computer-vision-and-pattern-recognition/
-│
 ├── efficientnet-face-recognition/
-│   ├── efficientnet_face_recognition.ipynb
-│   └── README.md
-│
 ├── knn-multiclass-image-classification/
-│   ├── knn_multiclass_image_classification.ipynb
-│   └── README.md
-│
 ├── lbph-face-recognition/
-│   ├── lbph_face_recognition.ipynb
-│   └── README.md
-│
 ├── mlp-pattern-recognition/
-│   ├── mlp_pattern_recognition.ipynb
-│   └── README.md
-│
 ├── neural-network-mnist-digit-recognition/
-│   ├── neural_network_mnist_digit_recognition.ipynb
-│   └── README.md
-│
-├── .gitignore
-├── LICENSE
-└── README.md
+│   (each folder holds one notebook and a README)
+├── assets/      banner and divider
+├── docs/        preview image
+└── LICENSE
 ```
----
 
-## 🧠 Key Topics Covered
+<img src="assets/divider.svg" alt="" width="100%">
 
-- Image classification
-- Face recognition (classical and deep learning)
-- Pattern recognition
-- Neural networks (MLP)
-- Distance-based learning (KNN)
-- Transfer learning
-- Feature extraction and evaluation
+## ◈ Author
 
----
+**Sajidur Rahman Sajid** - Full-Stack Developer and AI engineer from Dhaka.
 
-## 👤 Author
+[Portfolio](https://www.sajidur.me) · [LinkedIn](https://www.linkedin.com/in/sajidur-rahman-sajid/) · [GitHub](https://github.com/Saji-d) · [Email](mailto:sajidsajidurrahman99@gmail.com)
 
-**Sajidur Rahman Sajid**  
-Computer Science & Engineering (CSE)  
-Aspiring **AI / Machine Learning Engineer**
+<sub>Released under the MIT licence.</sub>
